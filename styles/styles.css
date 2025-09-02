@@ -1,0 +1,65 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: rgb(177, 181, 204);
+  --color-header: rgb(32, 20, 24);
+  --color-foreground-header: rgb(164, 66, 83);
+  --color-foreground: rgb(28, 32, 52);
+  --color-secondary: #f5f7fa;
+  --font-base:'Satoshi', sans-serif;;
+  --font-size-base: 1rem;  /* =16px */
+  --spacing: 1rem;
+  --radius: 8px;
+}
+
+html, body, *{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font: var(--font-base);
+  color: var(--color-foreground);
+}
+
+header{
+  background-color: var(--color-header);
+  text-align: center;
+}
+
+header h1{
+  color: var(--color-foreground-header);
+}
+main{
+  background-color: var(--color-background);
+  height: 100vw;
+}
+
+table{
+  background-color: var(--color-foreground-header);
+}
+
+th{
+  background-color: var(--color-header);
+  color: var(--color-foreground-header);
+}
+
+td{
+  background-color: var(--color-header);
+  color: var(--color-background);
+}
+
+h2 {
+  color: var(--color-foreground-header);
+  padding: 5dvh;
+}
+@media (min-width: 768px) {
+
+}
