@@ -7,6 +7,7 @@
   --color-header: rgb(32, 20, 24);
   --color-foreground-header: rgb(164, 66, 83);
   --color-foreground: rgb(28, 32, 52);
+  --color-background-button: #6167B9;
   --color-secondary: #f5f7fa;
   --font-base:'Satoshi', sans-serif;;
   --font-size-base: 1rem;  /* =16px */
@@ -51,7 +52,6 @@ main h2{
 
 table{
   background-color: var(--color-background);
-
 }
 
 th{
@@ -73,10 +73,30 @@ td{
   text-align: center;
 }
 
-tbody tr:nth-child(1) {height: 100px;}
+tbody tr:nth-child(1), tbody tr:nth-child(2), tbody tr:nth-child(3), tbody tr:nth-child(4), tbody tr:nth-child(5) {height: 100px;}
 th:nth-child(1), td:nth-child(1) { width: 80px;}
 th:nth-child(2),td:nth-child(2){width: 100px;}
 
-@media (min-width: 768px) {
+input[type="button"]{
+  background-color: var(--color-background-button);
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  font: var(--font-base);
+  font-weight: bolder;
+  max-width: 80px;
+  font-size: 1rem;
+  color: var(--color-background);
+}
 
+input[type="date"], input[type="datetime-local"], input[type="email"], input[type="file"]{
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
